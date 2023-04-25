@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        h1
+        {
+            /*Este es un comentario*/
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Hola Javascript</h1>
+    <p id="texto">Este es un parrafo</p>
+    <ul id="colores">
+
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+    </ul>
+    <script>
+        var titulo;
+        titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Feliz regreso a clases grupo ISSC 211 ;) ";
+        //ctrl + k + c
+        var texto = document.getElementById("texto");
+        texto.style.fontSize = "50px";
+        texto.innerHTML = "Marcador: Real Madrid 2(4) vs Chelsea 0";
+        var colores;
+        colores = document.getElementById("colores");
+        colores.style.display = "none";
+        // colores.style.display = "block";
+
+        //camel case
+        function cambiarColor(){
+            //alert('Hola JS');
+            console.log('Hola Developer');
+
+        }
+        cambiarColor();
+        document.write('Este es un numero generado por JS:');
+        document.write(50 / 60);  
+        var cadena = 'Hola soy un String';
+        console.log("Este es una cadena " + cadena);
+
+        let a,b,c;
+        a=5;
+        b=6
+        c=a+b;
+        console.log (c);
+
+        var radio = 10;
+        const PI = 3.1416;
+        function calcularArea(radio)
+        {
+            let areaTemporal = PI*radio*radio;
+            console.log('areaTemporal', areaTemporal);
+            return areaTemporal;
+        }
+        var area = calcularArea(radio);
+        console.log(area);
+
+        let numero = 10.50;
+        let nuevoNumero = 10;
+        let $multi_plica = numero*nuevoNumero;
+        console.log($multi_plica);
+        let sinValor;
+        console.log(sinValor);
+
+        let auto = "BMW";
+        // let auto;
+        console.log(auto);
+        // Let Hosting
+
+        let variableLocal = 10;
+        {
+            let variableLocal=2;
+            console.log("Primero",variableLocal);
+        }
+        console.log("Segundo", variableLocal);
+
+        const PI_ = 3.1416;
+        const autos = ["VW", "Chevrolet", "BMW", 50, '6'];
+        console.log(autos[0] + autos[1]);
+        console.log(autos.length);
+
+        let autoNuevo = {
+            tipo : "Toyota",
+            modelo : 500,
+            color : "Blanco"
+        }
+
+        console.log(autoNuevo.modelo);
+        console.log(autoNuevo.tipo);
+        console.log(autoNuevo.color);
+        console.log(autoNuevo);
+
+        //var es global, let es interno
+        var edad = 27;
+        var edad;
+        console.log (edad);
+
+        //let hosting (saber de que tipo es la variable)
+        var x1 = 4.5;
+        console.log(typeof x1);
+        var z1 = "Hola";
+        console.log(typeof z1);
+        var boolean = true;
+        console.log(typeof boolean);
+
+        console.log("resultado: ", typeof autos);
+        console.log(typeof autoNuevo);
+
+        console.log(3>10);
+        console.log('a'> 'b');
+        //operador ternario
+        let edadEmilio = 16;
+        edadEmilio > 18 ? alert('Verdadero') : alert('Falso');
+        console.log(8*null);
+        console.log('5a');
+
+        let valor=0;
+        while (valor <= 12)
+        {
+            console.log(valor);
+            valor++;
+        }
+
+        for(let i=0; i <= 12; i++)
+        {
+            console.log(i);
+            if(i % 7 == 0)
+            console.log('Entero', i);
+            else
+            consol.log('Su residuo es ', i%7)
+        }
+
+
+        const persona = 
+        {
+            nombre : 'Juan',
+            apellido : 'Pérez',
+            id : 1234,
+            nombreCompleto : function()
+            {
+                return this.nombre + ' '+ this.apellido
+            }
+        }
+
+        console.log(persona.nombreCompleto());
+        var personax = 
+        {
+            
+        }
+        
+
+    </script>
+
+
+</body>
+</html>

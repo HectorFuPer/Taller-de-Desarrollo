@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            animation: colors 10s infinite;
+        }
+        @keyframes colors {
+                0%{
+                    background:rgb(255, 0, 0);
+                }
+                25%{
+                    background-color: rgb(255, 255, 255);
+                }
+                50%{
+                    background: gold;
+                }
+                100%{
+                    background: rgb(0, 0, 0);
+                }
+        }
+        h1{
+            text-align: center;
+            padding-top: 250px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: red;
+        }
+        .cuadroBlanco{
+            background: #ff0000;
+            position: absolute;
+            animation: mueveCuadro 1s infinite;
+            text-align: center;
+
+        }
+        #cuadroBlanco1 {
+            width: 100px;
+            height: 100px;
+            left: 50px;
+        }
+        #cuadroBlanco2 {
+            width: 100px;
+            height: 100px;
+            left: 200px;
+        }
+        @keyframes mueveCuadro{
+            from{
+                top:0%
+            }
+            to{
+                top: 200px;
+            }
+        }
+        #cuadroRojo{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            left: 350px;
+            animation: mueveRojo 1s infinite;
+        }
+        @keyframes mueveRojo {
+            0%{
+                top: 0px;
+            }
+            25%
+            {
+                top: 200px;
+                width: 100px;
+                height: 50px;
+            background-color: rgb(255, 255, 255);
+            }
+            50%{
+                top: 100px;
+                width: 100px;
+                height: 100px;
+                background: gold;
+            }
+            100%{
+                top: 50px;
+                background: rgb(0, 0, 0);
+            }
+        }
+        #cuadroMulticolor{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            left: 500px;
+            animation: moversiu 10s infinite;
+        }
+        @keyframes moversiu{
+            0%{top: 0%; left: 500px; background: rgb(53, 168, 18);}
+            0%{top: 0%; left: 1000px; background: rgb(0, 255, 98);}
+            0%{top: 0%; left: 1000px; background: rgb(138, 255, 157);}
+            0%{top: 0%; left: 1000px; background: rgb(133, 231, 177);}
+
+        }
+        #circulo{
+            width: 100px;
+            height: 500px;
+            left: 500px;
+            background: pink;
+            position: absolute;
+            border-radius: 50%;
+            animation: crece 5s infinite;
+        }
+        @keyframes crecer{
+            0%{top: 0%; width: 100px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="cuadroBlanco1" class="cuadroBlanco">1</div>
+    <div id="cuadroBlanco2" class="cuadroBlanco">2</div>
+    <div id="cuadroRojo"></div>
+    <div id="cuadroMulticolor"> </div>
+</body>
+</html>
